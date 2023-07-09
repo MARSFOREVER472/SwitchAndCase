@@ -8,18 +8,22 @@ namespace SwitchStructure
         {
             // Estructura de Control Switch.
 
-            var variable = 9.8; // Iniciaremos con un valor por defecto en decimal.
+            var variable = 6.0; // Iniciaremos con un valor por defecto en decimal.
 
             // Realizaremos el proceso con un switch divididos por cases.
 
             switch (variable)
             {
-                case > 9.7: // Opción 1 dependiendo de la variable anterior a declarar.
-                    Console.WriteLine("Opción patrón 1");
+                case > 8.0: // Opción 1 dependiendo de la variable anterior a declarar.
+                    Console.WriteLine("Estás en el nivel avanzado");
                     break;
 
-                case >= 8.5: // Opción 2 dependiendo de la variable anterior a declarar.
-                    Console.WriteLine("Opción patrón 2");
+                case >= 5.5: // Opción 2 dependiendo de la variable anterior a declarar.
+                    Console.WriteLine("Estás en el nivel intermedio");
+                    break;
+
+                case >= 4.0: // Opción 3 dependiendo de la variable anterior a declarar.
+                    Console.WriteLine("Estás en el nivel básico");
                     break;
 
                 default: // En caso contrario si es que no cumple con estas dos opciones.
